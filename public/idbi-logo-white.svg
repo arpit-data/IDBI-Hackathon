@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" fill="none">
+  <!-- IDBI Bank Logo - White version for dark backgrounds -->
+  <!-- IDBI Text -->
+  <text x="10" y="38" font-family="Montserrat, Arial, sans-serif" font-weight="700" font-size="32" fill="#ffffff" letter-spacing="-0.5">IDBI</text>
+  <!-- Bank Text -->
+  <text x="112" y="38" font-family="Montserrat, Arial, sans-serif" font-weight="400" font-size="32" fill="rgba(255,255,255,0.85)" letter-spacing="-0.5">Bank</text>
+  <!-- Orange underline accent -->
+  <rect x="10" y="45" width="50" height="3" rx="1.5" fill="#f47920"/>
+</svg>

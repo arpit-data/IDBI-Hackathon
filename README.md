@@ -1,36 +1,118 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🏛️ WealthWise AI — AI-Powered Digital Wealth Management
 
-## Getting Started
+**An Avatar-Based Digital Wealth Advisory & Financial Health Platform custom-built for IDBI Bank.**
 
-First, run the development server:
+Designed to address the fragmentation and inaccessibility of wealth management services in India, **WealthWise AI** integrates seamlessly into IDBI Bank's mobile ecosystem. By analyzing customer transaction behaviors, UPI spending patterns, and investment habits, it provides hyper-personalized, regulatory-compliant (SEBI/RBI), and highly actionable financial guidance through an immersive conversational avatar.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## 🚀 Live Demo & Development Status
+* **Local Server:** `http://localhost:3000`
+* **Technology Stack:** Next.js 14+ (App Router), React 19, TypeScript, Chart.js, Lucide Icons, Vanilla CSS
+* **Design System:** Harmonies of IDBI Green (`#00836c`), Signature Accent Orange (`#f47920`), Montserrat typography, and elegant dark/light contrast cards.
+
+---
+
+## 🌟 Key Features Built for India-Scale Adoption
+
+### 1. 🤖 AI Wealth Avatar (Gemini-Powered)
+* **Immersive Conversational Interface:** Speech-ready AI assistant that answers financial questions.
+* **Context-Aware Recommendations:** Reads the user's spending habits, health score, and risk profile to answer questions dynamically.
+* **SEBI & RBI Compliance Guardrails:** Automatically blocks requests about speculative day trading, crypto, or direct stock recommendations, redirecting users to secure, diversified banking options.
+
+### 2. 👨‍👩‍👧‍👦 Family Financial Dashboard
+* **Consolidated Family Wealth:** Connect spouse, children, and parent accounts to view a unified family net worth.
+* **Joint Goal Tracking:** Track long-term family goals like child education funds (e.g. Aarav's College Fund in 2041) or family medical reserves.
+* **Member Breakdown:** Visual stacked bars showing each member's contributions and asset distribution.
+
+### 3. 📱 UPI Spending Analytics & Nudge Engine
+* **UPI Auto-Categorization:** Real-time analysis of payments across GPay, PhonePe, Paytm, and IDBI UPI.
+* **Impulse Spending Detector:** Categorizes purchases into *Essential*, *Recurring*, and *Impulse* transactions.
+* **Behavioral Warnings:** Prompts smart alerts if impulse shopping exceeds 25% of monthly income.
+
+### 4. 🏆 Gamification & SIP Streaks
+* **Streaks & XP Levels:** Promotes healthy financial behaviors with gamified streaks (e.g., 🔥 6-month SIP Streak, 💰 4-month Savings Streak).
+* **Achievement Badges:** Unlock rewards like "SIP Warrior", "Tax Saver", or "Budget Boss" to drive daily active engagement.
+* **Weekly Savings Challenges:** Actionable tasks like saving ₹2,000 extra this week with real-time tracker bars.
+
+### 5. ❤️ Financial Health Score
+* **Algorithmic Scoring:** Calculates a real-time health score (0–100) based on 5 metrics: Savings Rate, Debt-to-Income, Emergency Fund, Diversification, and Budget Discipline.
+* **Targeted Action Items:** Highlights immediate tasks needed to improve the score (e.g., "Build Emergency Fund to ₹3L").
+
+### 6. 📈 Portfolio, Tax Optimizer, & Retirement Planner
+* **Asset Allocation:** interactive doughnut charts powered by Chart.js representing Equity, Debt, Gold, and Cash.
+* **Tax Optimizer:** Tailored guidance for Indian tax deductions (Section 80C, 80D, 80CCD).
+* **Risk Profiling Wizard:** 7-question interactive assessment defining the user's investment style.
+
+---
+
+## 📁 Repository Structure
+
+```
+wealthwise-app/
+├── public/                 # Static assets (including official IDBI Bank logos)
+├── src/
+│   ├── app/                # Next.js App Router (17 active routes)
+│   │   ├── dashboard/      # Main client dashboard
+│   │   ├── avatar/         # AI Chat Avatar
+│   │   ├── health/         # Financial Health score calculator
+│   │   ├── family/         # Family Net Worth & Joint Goals
+│   │   ├── gold/           # Digital Gold & SGB tracker
+│   │   ├── spending/       # UPI Spending Analytics
+│   │   └── ...             # Portfolio, Goals, Tax, Risk Profiling pages
+│   ├── components/         # Layout & Shared UI components
+│   └── lib/
+│       ├── ai/             # Gemini API connection and system prompts
+│       ├── data/           # Synthetic customer financial data
+│       └── utils/          # Calculations & formatting helpers
+└── tests/                  # Custom 125-assertion validation test suite
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠️ Getting Started
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Prerequisites
+* Node.js (v18.x or later)
+* npm, yarn, or pnpm
 
-## Learn More
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/arpit-data/IDBI-Hackathon.git
+   cd IDBI-Hackathon/wealthwise-app
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. Run the development server:
+   ```bash
+   npm run dev
+   ```
+   Open [http://localhost:3000](http://localhost:3000) to view the application.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+4. Run the production build verification:
+   ```bash
+   npm run build
+   ```
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🧪 Automated Testing
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+We have built a comprehensive, 125-assertion automated test suite to ensure application stability, route accessibility, data integrity, and branding compliance.
+
+To run the test suite:
+```bash
+node tests/app-test.mjs
+```
+
+### Test Scope:
+* **Route Accessibility:** Verifies all 17 pages load with a 200 OK status.
+* **Branding Compliance:** Checks for IDBI logos, Montserrat typography, and primary color system application.
+* **A11y (Accessibility):** Confirms landmarks, skip-links, and ARIA labels.
+* **API Validation:** Tests streaming chat endpoint behavior.
+* **Data Integrity:** Ensures financial formats, health score rings, and calculations are accurate.

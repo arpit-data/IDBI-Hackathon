@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" fill="none">
+  <!-- IDBI Bank Logo Recreation -->
+  <defs>
+    <linearGradient id="idbiGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00836c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#006b57;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <!-- IDBI Text -->
+  <text x="10" y="38" font-family="Montserrat, Arial, sans-serif" font-weight="700" font-size="32" fill="#00836c" letter-spacing="-0.5">IDBI</text>
+  <!-- Bank Text -->
+  <text x="112" y="38" font-family="Montserrat, Arial, sans-serif" font-weight="400" font-size="32" fill="#00836c" letter-spacing="-0.5">Bank</text>
+  <!-- Orange underline accent -->
+  <rect x="10" y="45" width="50" height="3" rx="1.5" fill="#f47920"/>
+</svg>
