@@ -92,7 +92,8 @@ wealthwise-app/
    ```bash
    npm run dev
    ```
-   Open [http://localhost:3000](http://localhost:3000) to view the application.
+- **Live Web App (Vercel Cloud):** [https://wealthwise-app-pink.vercel.app](https://wealthwise-app-pink.vercel.app)
+- **Live Web App (Cloud Run):** [https://wealthwise-app-968067906878.asia-south1.run.app](https://wealthwise-app-968067906878.asia-south1.run.app)
 
 4. Run the production build verification:
    ```bash
